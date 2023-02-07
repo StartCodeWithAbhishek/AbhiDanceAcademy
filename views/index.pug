@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    title abhi dance academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top 
+        ul 
+          div#logo
+              img(src="/static/images/logo.png")
+              |ADC
+          li #[a(href="/") Home]
+          li #[a(href="/") about Us]
+          li #[a(href="/") class info]
+          li #[a(href="/") services]
+          li #[a(href="/") contact Us]
+    section#introsection 
+        div Welcome to abhi dance academy 
+        div.small eat sleep dance repeat 
+    section#missionsection
+        h2 Our mission
+        div.card 
+          h3 dance-1  
+          div.card-box
+              div.card-img 
+                  img(src="/static/images/dance1.png")
+              div.card-content
+                 p this is best dance academy of the universe   
+        div.card 
+          h3 dance-2 
+          div.card-box
+              div.card-img 
+                  img(src="/static/images/dance2.png")
+              div.card-content
+                 p this is best dance academy of the universe   
+        div.card 
+          h3 dance-3 
+          div.card-box
+              div.card-img 
+                  img(src="/static/images/dancce3.png")
+              div.card-content
+                 p this is best dance academy of the universe    
+    section#sponsorsection
+        h2 Our Sponsorse
+        div#sponsors
+           img(src="/static/images/Hp.png" alt="hp logo",class="spImage")
+           img(src="/static/images/apple.png" alt="apple logo",class="spImage")
+           img(src="/static/images/milogo.png" alt="hp logo",class="spImage")
+           img(src="/static/images/skype.png" alt="hp logo",class="spImage")
+    footer#footer 
+        | Copyright© 2022 AbhiDanceAcademy.com | All rights reserved
+    script
+      include ../static/index.js

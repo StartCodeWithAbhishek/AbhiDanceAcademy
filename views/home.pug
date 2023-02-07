@@ -1,0 +1,45 @@
+
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+      include ../static/style.css  
+
+block content 
+   
+    section#introsection 
+        div Welcome to abhi dance academy 
+        div.small eat sleep dance repeat 
+    section#missionsection
+        h2 Our mission
+        div.card 
+          h3 Hip Hop.
+          div.card-box
+              div.card-img 
+                  img(src="/static/images/dance1.png")
+              div.card-content
+                 p this is best dance academy of the universe   
+        div.card 
+          h3 Jazz
+          div.card-box
+              div.card-img 
+                  img(src="/static/images/dance2.png")
+              div.card-content
+                 p this is best dance academy of the universe   
+        div.card 
+          h3 Ballet
+          div.card-box
+              div.card-img 
+                  img(src="/static/images/dancce3.png")
+              div.card-content
+                 p this is best dance academy of the universe    
+    section#sponsorsection
+        h2 Our Sponsorse
+        div#sponsors
+           img(src="/static/images/Hp.png" alt="hp logo",class="spImage")
+           img(src="/static/images/apple.png" alt="apple logo",class="spImage")
+           img(src="/static/images/milogo.png" alt="hp logo",class="spImage")
+           img(src="/static/images/skype.png" alt="hp logo",class="spImage")
+        

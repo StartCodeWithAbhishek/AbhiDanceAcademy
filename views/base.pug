@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title abhi dance academy
+    block scripts
+    block style
+      
+  body
+    nav#navbar.top 
+        ul 
+          div#logo
+              img(src="/static/images/logo.png")
+              |ADC
+          li #[a(href="/") Home]
+          li #[a(href="/about") about Us]
+          li #[a(href="/classInfo") class info]
+          li #[a(href="#missionsection") services]
+          li #[a(href="/contact") contact Us]
+    block content
+    footer#footer 
+        | Copyright© 2022 AbhiDanceAcademy.com | All rights reserved  
+  
+    

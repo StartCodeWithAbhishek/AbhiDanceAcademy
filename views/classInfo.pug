@@ -1,0 +1,54 @@
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+      include ../static/style.css  
+      include ../static/stylecontact.css  
+block content
+    div.classInfo
+          h2.info Dance Academy Schedule
+              table 
+                thead
+                  tr
+                    th Day
+                    th Time
+                    th Class
+                    th Instructor
+                tbody
+                  tr
+                    td Monday
+                    td 10:00 AM - 11:30 AM
+                    td Ballet
+                    td Ms. Smith
+                  tr
+                    td Monday
+                    td 12:00 PM - 1:30 PM
+                    td Jazz
+                    td Mr. Johnson
+                  tr
+                    td Tuesday
+                    td 9:00 AM - 10:30 AM
+                    td Tap
+                    td Ms. Davis
+                  tr
+                    td Tuesday
+                    td 11:00 AM - 12:30 PM
+                    td Hip Hop
+                    td Mr. Brown
+                  tr
+                    td Wednesday
+                    td 3:00 PM - 4:30 PM
+                    td Contemporary
+                    td Ms. Wilson
+                  tr
+                    td Thursday
+                    td 2:00 PM - 3:30 PM
+                    td Latin
+                    td Mr. Green
+                  tr
+                    td Friday
+                    td 5:00 PM - 6:30 PM
+                    td Ballroom
+                    td Ms. Kim
