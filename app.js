@@ -1,9 +1,10 @@
 const express = require("express");
 const path = require("path");
+import dotenv from 'dotenv';
 const app = express();
 const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
-mongoose.connect('mongodb+srv://CodeWithAbhi:CodeWithAbhi%402002@cluster0.txt21qn.mongodb.net/booking?retryWrites=true&w=majority',{useNewUrlParser:true});
+mongoose.connect(process.env.MONGO,{useNewUrlParser:true});
 const port = process.env.port ||80;
 // define mongoose schema 
 const contactSchema = new mongoose.Schema({
@@ -52,3 +53,4 @@ app.post('/contact', (req, res)=>{
 app.listen(port, ()=>{
     console.log(`The application started successfully on port ${port}`);
 });
+// jjjj
