@@ -3,8 +3,8 @@ const path = require("path");
 const app = express();
 const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
-mongoose.connect('mongodb://localhost/contactdance',{useNewUrlParser:true});
-const port = 80;
+mongoose.connect('mongodb+srv://CodeWithAbhi:CodeWithAbhi%402002@cluster0.txt21qn.mongodb.net/booking?retryWrites=true&w=majority',{useNewUrlParser:true});
+const port = process.env.port ||80;
 // define mongoose schema 
 const contactSchema = new mongoose.Schema({
     name: String,
