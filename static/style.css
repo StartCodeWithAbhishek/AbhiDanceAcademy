@@ -185,15 +185,6 @@ height: 290px ;
     margin: 20px;
     margin-bottom: 4px;
 }
-
-
-
-
-
-
-
-
-
 #footer{
     height: 60px ;
     background-color:rgb(36, 33, 33);
@@ -204,3 +195,26 @@ height: 290px ;
     font-size: 20px;
     font-family:'Yeon Sung', cursive;;
 }
+
+@media only screen and (max-width: 1177px) {
+    #missionsection{
+        height: 330px ;  
+        width:100%;
+        margin:auto;
+    }
+    #sponsors{
+        display:block;
+        position: inherit;
+        max-width:1000px;
+        margin: auto;
+       
+    }
+    #sponsorsection{
+        height: 490px ;    
+            background-color:#ffe2e2;
+        
+        }
+
+  }
+
+
