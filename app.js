@@ -3,7 +3,7 @@ const path = require("path");
 const app = express();
 const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
-mongoose.connect('mongodb+srv://CodeWithAbhi:CodeWithAbhi%402002@cluster0.txt21qn.mongodb.net/booking?retryWrites=true&w=majority',{useNewUrlParser:true});
+mongoose.connect(process.env.MONGO,{useNewUrlParser:true});
 const port = process.env.port ||80;
 // define mongoose schema 
 const contactSchema = new mongoose.Schema({
@@ -41,6 +41,8 @@ app.get('/about', (req, res)=>{
 
 app.post('/contact', (req, res)=>{
     var myData = new contact(req.body);
+
+
     myData.save().then(()=>{
     res.status(200).render("home.pug")
     }).catch(()=>{
@@ -48,8 +50,17 @@ app.post('/contact', (req, res)=>{
 });
 //res.status(200).render('contact.pug')
 })
+
+app.post('/data', (req, res)=>{
+    var myData = new contact.find();
+    res.status(200).json(myData)
+})
+
+
+
+
+
 // sarver start 
 app.listen(port, ()=>{
     console.log(`The application started successfully on port ${port}`);
 });
-// jjjjjjjjjjjjjjjjjj
